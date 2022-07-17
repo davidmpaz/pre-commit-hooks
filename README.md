@@ -202,14 +202,12 @@ Trims trailing whitespace.
 #### `prepare-commit-msg`
 Allows for using a jinja2 template for formatting your commit message.
 You can configure this with the following commandline options:
-- `-t` / `--template ` - absolute path to the template. Default implementations exist
-   for right away usage. Default value: absolute path to bundled `prepare_commit_msg_append.j2` file
+- `-t` / `--template ` - absolute path to the template. Default value: absolute
+   path to bundled `prepare_commit_msg_append.j2` file
 - `-b` / `--branch` - may be specified multiple times to exclude branches
-   from formatting the commit message. Think of it as a black list feature.
-   Default value: `main, master`
+   from formatting the commit message. Default values: `main, master`
 - `-p` / `--pattern` - may be specified multiple times to include branches
-   for formatting the commit message. Think of it as a white list feature.
-   Default value: `(?<=feature/).*`
+   for formatting the commit message. Default value: `(?<=feature/).*`
 
 
 ### Deprecated / replaced hooks
